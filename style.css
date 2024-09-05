@@ -1,0 +1,165 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    flex-direction: column;
+    display: flex;
+    line-height: 1.6;
+}
+
+.eu {
+    border-radius: 20%;
+}
+
+.perfil {
+text-align: center;
+}
+
+.hero {
+    background: linear-gradient(120deg, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 60px; /* Compensa o cabeçalho fixo */
+}
+
+header {
+    background: linear-gradient(to right, #7a5a00, #ffbb00 50%, #7a5a00);
+    color: #fff;
+    padding: 5px;
+    position: sticky;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000; /* Garante que o header fique acima do conteúdo */
+    /*animation: mudarCor 5s infinite; /* Aplica a animação de mudança de cor */
+}
+
+.logo {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+@keyframes mudarCor {
+    0% {
+        background-color: rgb(255, 0, 0); /* Vermelho */
+    }
+    25% {
+        background-color: rgb(0, 255, 0); /* Verde */
+    }
+    50% {
+        background-color: rgb(0, 0, 255); /* Azul */
+    }
+    75% {
+        background-color: rgb(255, 255, 0); /* Amarelo */
+    }
+    100% {
+        background-color: rgb(255, 0, 0); /* Volta ao Vermelho */
+    }
+}
+
+main {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+nav ul {
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-section .service {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin-top: 5px; /* Ajuste a margem para compensar a altura do header */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura total do elemento */
+}
+
+#reset{
+    padding: 10px;
+    background: linear-gradient(to right, #7a5a00, #ffbb00 50%, #7a5a00);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#reset:hover{
+    background-color: #00a3cc;
+    transform: translateY(-3px); /* Eleva ligeiramente o botão */
+}
+
+button {
+    padding: 10px;
+    background: linear-gradient(to right, #7a5a00, #ffbb00 50%, #7a5a00);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #00a3cc;
+    transform: translateY(-3px); /* Eleva ligeiramente o botão */
+}
+
+footer {
+    background: linear-gradient(to right, #7a5a00, #ffbb00 50%, #7a5a00);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    bottom: 0;
+    z-index: 1000; /* Garante que o footer fique acima do conteúdo */
+    /*animation: mudarCor 5s infinite;*/
+}
+
+
+#infoCal{/*utilizando class*/
+    display: none;
+}
+#infoMed{/*utiliozando id */
+    display: none;
+}
+
+.menu-container .menu-list {
+    display: none;
+}
+
+.menu-container .menu-list.show-menu {
+    display: block;
+}
