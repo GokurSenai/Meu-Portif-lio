@@ -5,45 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="style.css">
-    <!--<img src="Rick_and_Morty.jpg" alt="Logo da Minha Aplicação">-->
-    <title>Formulário de contato.</title>
-    <!--Links para páginas ou scripts vão aqui-->
-    <!--colspan="3" faz com que as células mesclem-->
+    <title>Contato.</title>
 </head>
 
 <body>
     <header>
-        <hr>
-        <img src="logo.png" alt="logo" id="logo", width="90" height="90">
+        <img src="logo.png" alt="logo" id="logo" , width="90" height="90">
         <h2><big>Contato</big></h2>
-        <p>
-            <nav> 
-                <a href="index.html">Home</a>
-                <a href="about.html">Sobre</a>
-                <a href="contact.html">Contato</a>
-                <a href="portfolio.html">Portifólio</a>
-            </nav>
-        </p>
+        <hr>
+        <nav> 
+            <a href="index.html">Home</a>
+            <a href="about.html">Sobre</a>
+            <a href="contact.html">Contato</a>
+            <a href="portfolio.html">Portifólio</a>
+        </nav>
         <hr>
     </header>
-    </head>
-    <hr>
     <main>
-        <section>
-            <p><label for="usuario">Nome Completo:</label><br>
-                <input type="text" id="usuario" name="usuario" required>
-            </p>
-    
-            <p><label for="e-mail">E-Mail:</label><br>
-                <input type="email" id="e-mail" name="e-mail" required>
-            </p>
-            <p>
-                <br> <label for="comentario">Fale comigo.</label>
-    
-            <p><textarea id="comentario" name="comentario" rows="5" cols="30" required></textarea>
-                <input type="reset" id="reset" value="Limpar">
-                <button type="submit" id="botaoenvio">Enviar</button>
-            </p>
+        <section class="hero">
+            <div class="hero-content">
+                <p><label for="usuario">Nome Completo:</label><br>
+                    <input type="text" id="usuario" name="usuario" required>
+                </p>
+        
+                <p><label for="e-mail">E-Mail:</label><br>
+                    <input type="email" id="e-mail" name="e-mail" required>
+                </p>
+                <p>
+                    <br> <label for="comentario">Fale comigo.</label>
+        
+                <p><textarea id="comentario" name="comentario" rows="5" cols="30" required></textarea>
+                    <input type="reset" id="reset" value="Limpar">
+                    <button type="submit" id="botaoenvio">Enviar</button>
+                </p>
+            </div>
         </section>
     </main>
 </body>
