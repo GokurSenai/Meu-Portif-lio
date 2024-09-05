@@ -174,6 +174,49 @@ section {
     /* Inclui padding e border na largura e altura total do elemento */
 }
 
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cor de fundo semitransparente */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* Ajuste a altura conforme necessário */
+}
+
+.image-description {
+    margin: 0;
+}
+
 #reset {
     padding: 10px;
     background: linear-gradient(to right, #2c2c2c, #1d1d1d 50%, #2c2c2c);
