@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -16,28 +17,79 @@ body {
 }
 
 .perfil {
-text-align: center;
-}
-
-.hero {
-    background: linear-gradient(120deg, #00c6ff, #0072ff);
-    color: white;
     text-align: center;
-    padding: 100px 20px;
-    margin-top: 60px; /* Compensa o cabeçalho fixo */
 }
 
 header {
-    background: linear-gradient(to right, #7a5a00, #ffbb00 50%, #7a5a00);
+    background: linear-gradient(to right, #2c2c2c, #1d1d1d 50%, #2c2c2c);
     color: #fff;
-    padding: 5px;
-    position: sticky;
+    padding: 3px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     justify-content: space-between;
     top: 0;
-    z-index: 1000; /* Garante que o header fique acima do conteúdo */
+    z-index: 1000;
+    /* Garante que o header fique acima do conteúdo */
     /*animation: mudarCor 5s infinite; /* Aplica a animação de mudança de cor */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: relative;
+    background: linear-gradient(to right, #2c2c2c, #1d1d1d 50%, #2c2c2c);
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero section {
+    margin-bottom: 10px;
+}
+
+.hero-content input[type="text"],
+.hero-content input[type="email"],
+.hero-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 3px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.hero textarea {
+    resize: vertical;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3b3b3b;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #616161;
 }
 
 .logo {
@@ -48,26 +100,35 @@ header {
 
 @keyframes mudarCor {
     0% {
-        background-color: rgb(255, 0, 0); /* Vermelho */
+        background-color: rgb(255, 0, 0);
+        /* Vermelho */
     }
+
     25% {
-        background-color: rgb(0, 255, 0); /* Verde */
+        background-color: rgb(0, 255, 0);
+        /* Verde */
     }
+
     50% {
-        background-color: rgb(0, 0, 255); /* Azul */
+        background-color: rgb(0, 0, 255);
+        /* Azul */
     }
+
     75% {
-        background-color: rgb(255, 255, 0); /* Amarelo */
+        background-color: rgb(255, 255, 0);
+        /* Amarelo */
     }
+
     100% {
-        background-color: rgb(255, 0, 0); /* Volta ao Vermelho */
+        background-color: rgb(255, 0, 0);
+        /* Volta ao Vermelho */
     }
 }
 
 main {
     flex: 1;
     padding: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -96,7 +157,8 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    transform: scale(1.05);
+    /* Leve aumento ao passar o mouse */
 }
 
 nav a.active {
@@ -105,54 +167,59 @@ nav a.active {
 }
 
 section {
-    padding: 20px;
-    margin-top: 5px; /* Ajuste a margem para compensar a altura do header */
-    box-sizing: border-box; /* Inclui padding e border na largura e altura total do elemento */
+    padding: 0px;
+    box-sizing: border-box;
+    /* Inclui padding e border na largura e altura total do elemento */
 }
 
-#reset{
+#reset {
     padding: 10px;
-    background: linear-gradient(to right, #7a5a00, #ffbb00 50%, #7a5a00);
+    background: linear-gradient(to right, #2c2c2c, #1d1d1d 50%, #2c2c2c);
     color: #fff;
     border: none;
     cursor: pointer;
     font-weight: bold;
 }
 
-#reset:hover{
+#reset:hover {
     background-color: #00a3cc;
-    transform: translateY(-3px); /* Eleva ligeiramente o botão */
+    transform: translateY(-3px);
+    /* Eleva ligeiramente o botão */
 }
 
 button {
     padding: 10px;
-    background: linear-gradient(to right, #7a5a00, #ffbb00 50%, #7a5a00);
+    background: linear-gradient(to right, #2c2c2c, #1d1d1d 50%, #2c2c2c);
     color: #fff;
     border: none;
     cursor: pointer;
     font-weight: bold;
 }
+
 button:hover {
     background-color: #00a3cc;
-    transform: translateY(-3px); /* Eleva ligeiramente o botão */
+    transform: translateY(-3px);
+    /* Eleva ligeiramente o botão */
 }
 
 footer {
-    background: linear-gradient(to right, #7a5a00, #ffbb00 50%, #7a5a00);
+    background: linear-gradient(to right, #2c2c2c, #1d1d1d 50%, #2c2c2c);
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
     color: #fff;
     padding: 0px;
     text-align: center;
     bottom: 0;
-    z-index: 1000; /* Garante que o footer fique acima do conteúdo */
+    z-index: 1000;
+    /* Garante que o footer fique acima do conteúdo */
     /*animation: mudarCor 5s infinite;*/
 }
 
 
-#infoCal{/*utilizando class*/
+#infoCal {
     display: none;
 }
-#infoMed{/*utiliozando id */
+
+#infoMed {
     display: none;
 }
 
