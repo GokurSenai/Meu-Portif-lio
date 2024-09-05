@@ -18,3 +18,23 @@ document.getElementById("botaomedieval").addEventListener("click", function () {
         document.getElementById("botaomedieval").innerHTML = "Abrir";
     }
 });
+document.getElementById("botaoJJBA").addEventListener("click", function () {
+    const paragrafo = document.getElementById('infoJJBA');
+    if (paragrafo.style.display === "none" || paragrafo.style.display === "") {
+        paragrafo.style.display = "block";
+        document.getElementById("botaoJJBA").innerHTML = "Ocultar";
+    } else {
+        paragrafo.style.display = "none";
+        document.getElementById("botaoJJBA").innerHTML = "Abrir";
+    }
+});
+document.getElementById("botaoArduino").addEventListener("click", function () {
+    const paragrafo = document.getElementById('infoArduino');
+    if (paragrafo.style.display === "none" || paragrafo.style.display === "") {
+        paragrafo.style.display = "block";
+        document.getElementById("botaoArduino").innerHTML = "Ocultar";
+    } else {
+        paragrafo.style.display = "none";
+        document.getElementById("botaoArduino").innerHTML = "Abrir";
+    }
+});
